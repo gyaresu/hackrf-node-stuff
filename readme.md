@@ -12,15 +12,20 @@ And using a `hackrf` via `node` is something I've wanted since before it was eve
 
 ### Spectrum Painter 
 
-https://github.com/polygon/spectrum_painter
+##### Use [Spectrum Painter](https://github.com/polygon/spectrum_painter) to create an IQ stream:
 
 ```bash
-python spectrum_painter/img2iqstream.py examples/gareth.png --samplerate 8000000 --format hackrf > gareth.raw```
+python spectrum_painter/img2iqstream.py examples/gareth.png --samplerate 8000000 --format hackrf > gareth.raw
+```
 
-**Test with `hackrf_transfer` first:**
+##### Then test with `hackrf_transfer`: 
 ```bash
 hackrf_transfer -f 915000000 -s 3700000 -t gareth.raw -x 20 -a 1
 ```
+
+[GQRX](http://gqrx.dk) is a multi-platform software reciever with waterfall plot.
+
+You might need to tweak some of the sample rate / fft settings in both `hackrf_transfer` & `gqrx` to get the correct aspect ratio but it's not difficult.
 
 ### HackRF for Node
 
