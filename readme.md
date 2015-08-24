@@ -28,6 +28,15 @@ hackrf_transfer -f 915000000 -s 3700000 -t gareth.raw -x 20 -a 1
 
 You might need to tweak some of the sample rate / fft settings in both `hackrf_transfer` & `gqrx` to get the correct aspect ratio but it's not difficult.
 
+```
+FFT: 8192
+Rate: 50fps
+Filter Width: Normal
+Filter Shape: Normal
+Mode: Narrow/FM
+AGC: Fast
+```
+
 ### HackRF for Node
 
 ##### So I wrote something straight from my brain using [hackrf-stream](https://github.com/mappum/hackrf-stream)...
