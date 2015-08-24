@@ -1,0 +1,25 @@
+{
+  "name": "hackrf-node-stuff",
+  "version": "1.0.0",
+  "description": "Folks were playing around with [Hellschreiber](https://en.wikipedia.org/wiki/Hellschreiber) encoding in the #hackrf channel on Freenode last week using `hackrf_transfer`",
+  "main": "image-transfer.js",
+  "dependencies": {
+    "hackrf": "^3.0.1",
+    "hackrf-stream": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyaresu/hackrf-node-stuff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gyaresu/hackrf-node-stuff/issues"
+  },
+  "homepage": "https://github.com/gyaresu/hackrf-node-stuff#readme"
+}
