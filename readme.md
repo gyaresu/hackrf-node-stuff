@@ -23,6 +23,7 @@ python spectrum_painter/img2iqstream.py examples/gareth.png --samplerate 8000000
 hackrf_transfer -f 915000000 -s 3700000 -t gareth.raw -x 20 -a 1
 ```
 
+##### Show the transmission on a second machine with `gqrx`:
 [GQRX](http://gqrx.dk) is a multi-platform software reciever with waterfall plot.
 
 You might need to tweak some of the sample rate / fft settings in both `hackrf_transfer` & `gqrx` to get the correct aspect ratio but it's not difficult.
